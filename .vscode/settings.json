@@ -1,0 +1,31 @@
+{
+    "python.languageServer": "Pylance",
+    "[python]": {
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "eeyore.yapf",
+        "editor.tabSize": 4,
+        "editor.rulers": [
+            100
+        ],
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "yapf.args": [
+        "--style",
+        "{based_on_style: pep8, indent_width: 4,column_limit: 100}"
+    ],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "flake8.args": [
+        "--line-length=100",
+        "--ignore=E131,E302",
+    ],
+    "pylint.args": [
+        "--rcfile=.pylintrc"
+    ],
+    "python.formatting.provider": "none",
+}
